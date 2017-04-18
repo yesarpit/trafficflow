@@ -9,7 +9,7 @@ var assert = require('assert');
 
 
 
-var server = app.listen(8080, function() {
+var server = app.listen(8081, function() {
 
     var host = server.address().address
     var port = server.address().port
@@ -26,7 +26,7 @@ var MongoClient = require('mongodb').MongoClient
 
 // Connection URL
 //var url = 'mongodb://localhost:27017/Traffic';
-var url = 'mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/trafficflow';
+var url = 'mongodb://127.3.177.130:27017/trafficflow';
 // Use connect method to connect to the server
 
 
