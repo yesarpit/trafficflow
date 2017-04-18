@@ -25,7 +25,8 @@ var MongoClient = require('mongodb').MongoClient
 
 
 // Connection URL
-var url = 'mongodb://localhost:27017/Traffic';
+//var url = 'mongodb://localhost:27017/Traffic';
+var url = 'mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/trafficflow';
 // Use connect method to connect to the server
 
 
